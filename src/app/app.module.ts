@@ -11,7 +11,7 @@ import {CompsModule} from "./comps/comps.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,

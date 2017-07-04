@@ -7,6 +7,7 @@ import {MaterialModModule} from "../material-mod/material-mod.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { InputComponent } from './input/input.component';
+import { DatepickerComponent } from './datepicker/datepicker.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import { InputComponent } from './input/input.component';
     BrowserAnimationsModule,
     MaterialModModule
   ],
-  declarations: [CheckboxComponent, AutoCompleteComponent, InputComponent],
-  exports: [CheckboxComponent, AutoCompleteComponent, InputComponent],
+  declarations: [CheckboxComponent, AutoCompleteComponent, InputComponent, DatepickerComponent],
+  exports: [CheckboxComponent, AutoCompleteComponent, InputComponent, DatepickerComponent],
 })
 export class CompsModule { }
