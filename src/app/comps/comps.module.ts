@@ -10,6 +10,7 @@ import { InputComponent } from './input/input.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { RadioComponent } from './radio/radio.component';
 import { SelectComponent } from './select/select.component';
+import {PlayComponent} from './play/play.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,25 @@ import { SelectComponent } from './select/select.component';
     BrowserAnimationsModule,
     MaterialModModule
   ],
-  declarations: [CheckboxComponent, AutoCompleteComponent, InputComponent, DatepickerComponent, RadioComponent, SelectComponent],
-  exports: [CheckboxComponent, AutoCompleteComponent, InputComponent, DatepickerComponent, RadioComponent],
+  declarations: [
+    CheckboxComponent,
+    AutoCompleteComponent,
+    InputComponent,
+    DatepickerComponent,
+    RadioComponent,
+    SelectComponent,
+    PlayComponent,
+    // Dir1Directive,
+    // Comp1Component
+  ],
+  exports: [
+    CheckboxComponent,
+    AutoCompleteComponent,
+    InputComponent,
+    DatepickerComponent,
+    RadioComponent,
+    SelectComponent,
+    PlayComponent
+  ]
 })
 export class CompsModule { }

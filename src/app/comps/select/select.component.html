@@ -1,3 +1,19 @@
-<p>
-  select works!
-</p>
+
+<section>
+  placholder position:<br>
+  <md-radio-group [(ngModel)]="placeholder">
+    <md-radio-button [value]="val" *ngFor="let val of ['auto', 'never', 'always']">{{val}}</md-radio-button>
+  </md-radio-group>
+</section>
+
+<section>
+<md-select placeholder="Favorite food" [(ngModel)]="selection" [floatPlaceholder]="placeholder">
+  <md-option *ngFor="let food of foods" [value]="food.value" [disabled]="food.disabled">
+    {{ food.viewValue }}
+  </md-option>
+</md-select>
+</section>
+
+<section>
+  selection: {{selection}}
+</section>
