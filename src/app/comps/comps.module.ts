@@ -8,6 +8,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { InputComponent } from './input/input.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
+import { RadioComponent } from './radio/radio.component';
+import { SelectComponent } from './select/select.component';
 
 @NgModule({
   imports: [
@@ -17,7 +19,7 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
     BrowserAnimationsModule,
     MaterialModModule
   ],
-  declarations: [CheckboxComponent, AutoCompleteComponent, InputComponent, DatepickerComponent],
-  exports: [CheckboxComponent, AutoCompleteComponent, InputComponent, DatepickerComponent],
+  declarations: [CheckboxComponent, AutoCompleteComponent, InputComponent, DatepickerComponent, RadioComponent, SelectComponent],
+  exports: [CheckboxComponent, AutoCompleteComponent, InputComponent, DatepickerComponent, RadioComponent],
 })
 export class CompsModule { }
