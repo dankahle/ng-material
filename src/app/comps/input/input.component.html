@@ -1,0 +1,32 @@
+
+<section>
+  <md-checkbox [(ngModel)]="disabled">disabled</md-checkbox>
+</section>
+<section>
+  <h3>input</h3>
+  <md-input-container  hintLabel="my hint" color="warn">
+    <span mdPrefix style="margin-right:10px;">prefix </span>
+    <input #input
+      autofocus
+      mdInput placeholder="fave food"
+      [(ngModel)]="food"
+      required
+      [disabled]="disabled"
+    >
+    <span mdSuffix>suffix</span>
+    <md-error>my error</md-error>
+  </md-input-container>
+  <br><br>food: {{food}}
+</section>
+<br><br>
+<section>
+  <h3>textarea</h3>
+  <md-input-container color="warn">
+    <span mdPrefix style="margin-right:10px;">prefix </span>
+    <textarea #resize="mdTextareaAutosize" mdTextareaAutosize mdAutosizeMinRows="3" mdInput placeholder="fave desc" [(ngModel)]="desc" required></textarea>
+    <span mdSuffix>suffix</span>
+    <md-error>my error</md-error>
+    <md-hint align="end">my desc hint</md-hint>
+  </md-input-container>
+  <br><br>desc: {{desc}}
+</section>

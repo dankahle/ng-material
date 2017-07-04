@@ -1,0 +1,25 @@
+<md-checkbox [(ngModel)]="checked">Checked</md-checkbox><br>
+<md-checkbox [(ngModel)]="indeterminate">Indeterminate</md-checkbox><br>
+<md-checkbox [(ngModel)]="disabled">disabled</md-checkbox><br>
+
+<section>
+  <label class="example-margin">Align:</label>
+  <md-radio-group [(ngModel)]="labelPosition">
+    <md-radio-button class="example-margin" value="before">Before</md-radio-button>
+    <md-radio-button class="example-margin" value="after">After</md-radio-button>
+  </md-radio-group>
+</section>
+
+<br><br>
+<md-checkbox #checkbox
+             [checked]="checked"
+             [indeterminate]="indeterminate"
+             [labelPosition]="labelPosition"
+             [disableRipple]="true"
+             [disabled]="disabled"
+             name="dankman"
+>result
+</md-checkbox>
+<br>
+<button (click)="toggle()">toggle</button>
+value: {{checked}}
