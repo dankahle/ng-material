@@ -12,6 +12,10 @@ import { RadioComponent } from './radio/radio.component';
 import { SelectComponent } from './select/select.component';
 import {PlayComponent} from './play/play.component';
 import { SliderComponent } from './slider/slider.component';
+import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
+import { ButtonsComponent } from './buttons/buttons.component';
+import { ToggleButtonsComponent } from './toggle-buttons/toggle-buttons.component';
+import { ChipsComponent } from './chips/chips.component';
 
 @NgModule({
   imports: [
@@ -32,6 +36,10 @@ import { SliderComponent } from './slider/slider.component';
     // Dir1Directive,
     // Comp1Component,
     SliderComponent,
+    SlideToggleComponent,
+    ButtonsComponent,
+    ToggleButtonsComponent,
+    ChipsComponent,
   ],
   exports: [
     CheckboxComponent,
@@ -42,6 +50,10 @@ import { SliderComponent } from './slider/slider.component';
     SelectComponent,
     PlayComponent,
     SliderComponent,
+    SlideToggleComponent,
+    ButtonsComponent,
+    ToggleButtonsComponent,
+    ChipsComponent,
   ]
 })
 export class CompsModule { }
