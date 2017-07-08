@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './chips.component.html',
   styleUrls: ['./chips.component.scss']
 })
-export class ChipsComponent implements OnInit {
+export class ChipsComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  chips = [
+    {name: 'one', selected: false},
+    {name: 'two', selected: false},
+    {name: 'three', selected: true},
+  ];
 
 }

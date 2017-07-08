@@ -12,7 +12,7 @@ export class ToggleButtonsComponent implements OnInit {
     {name: 'left', value: false},
     {name: 'center', value: false},
     {name: 'right', value: true},
-    {name: 'justify', value: false},
+    {name: 'justify', value: false, disabled: true},
   ];
   constructor() { }
 

@@ -21,7 +21,10 @@
 <section>
   <h3>checkboxes (multiple)</h3>
   <md-button-toggle-group #groupMultiple="mdButtonToggleGroup" multiple>
-    <md-button-toggle *ngFor="let button of buttons;index as idx" [checked]="button.value" (change)="change(idx, $event)">
+    <md-button-toggle *ngFor="let button of buttons;index as idx"
+                      [checked]="button.value"
+                      [disabled]="button.disabled"
+                      (change)="change(idx, $event)">
       <md-icon>format_align_{{button.name}}</md-icon>
     </md-button-toggle>
   </md-button-toggle-group>
