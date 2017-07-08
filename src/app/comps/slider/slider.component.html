@@ -1,0 +1,18 @@
+
+<section>
+  <md-input-container><input mdInput type="number" [(ngModel)]="min" placeholder="min"></md-input-container><br>
+  <md-input-container><input mdInput type="number" [(ngModel)]="max" placeholder="max"></md-input-container><br>
+  <md-input-container><input mdInput type="number" [(ngModel)]="step" placeholder="step"></md-input-container><br>
+  <md-input-container><input mdInput type="number" [(ngModel)]="tickInterval" placeholder="tickInterval"></md-input-container><br>
+  <md-checkbox [(ngModel)]="thumbLabel">thumbLabel</md-checkbox><br>
+</section>
+<section>
+  <md-slider style="width:300px;"
+    [min]="min"
+    [max]="max"
+    [step]="step"
+    [tickInterval]="tickInterval"
+    [thumbLabel]="thumbLabel"
+    (change)="log($event.value)"
+  ></md-slider>
+</section>

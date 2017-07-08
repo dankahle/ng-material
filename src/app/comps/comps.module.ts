@@ -11,6 +11,7 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
 import { RadioComponent } from './radio/radio.component';
 import { SelectComponent } from './select/select.component';
 import {PlayComponent} from './play/play.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import {PlayComponent} from './play/play.component';
     SelectComponent,
     PlayComponent,
     // Dir1Directive,
-    // Comp1Component
+    // Comp1Component,
+    SliderComponent,
   ],
   exports: [
     CheckboxComponent,
@@ -38,7 +40,8 @@ import {PlayComponent} from './play/play.component';
     DatepickerComponent,
     RadioComponent,
     SelectComponent,
-    PlayComponent
+    PlayComponent,
+    SliderComponent,
   ]
 })
 export class CompsModule { }
