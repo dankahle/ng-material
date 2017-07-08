@@ -3,7 +3,16 @@
   <md-input-container><input mdInput type="number" [(ngModel)]="min" placeholder="min"></md-input-container><br>
   <md-input-container><input mdInput type="number" [(ngModel)]="max" placeholder="max"></md-input-container><br>
   <md-input-container><input mdInput type="number" [(ngModel)]="step" placeholder="step"></md-input-container><br>
-  <md-input-container><input mdInput type="number" [(ngModel)]="tickInterval" placeholder="tickInterval"></md-input-container><br>
+
+<section>  <md-checkbox [(ngModel)]="ticks">show ticks</md-checkbox>
+  <span *ngIf="ticks">
+  <md-checkbox [(ngModel)]="auto">auto</md-checkbox>
+  <md-input-container *ngIf="ticks && !auto">
+    <input mdInput type="number" [(ngModel)]="tickInterval" placeholder="tickInterval">
+  </md-input-container>
+  </span>
+</section>
+
   <md-checkbox [(ngModel)]="thumbLabel">thumbLabel</md-checkbox><br>
 </section>
 <section>
