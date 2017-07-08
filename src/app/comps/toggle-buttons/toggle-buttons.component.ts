@@ -6,7 +6,7 @@ import {MdButtonToggleChange} from "@angular/material";
   templateUrl: './toggle-buttons.component.html',
   styleUrls: ['./toggle-buttons.component.scss']
 })
-export class ToggleButtonsComponent implements OnInit {
+export class ToggleButtonsComponent {
 
   buttons = [
     {name: 'left', value: false},
@@ -14,13 +14,5 @@ export class ToggleButtonsComponent implements OnInit {
     {name: 'right', value: true},
     {name: 'justify', value: false, disabled: true},
   ];
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  change(idx, e:MdButtonToggleChange) {
-    this.buttons[idx].value = e.source.checked;
-  }
 
 }

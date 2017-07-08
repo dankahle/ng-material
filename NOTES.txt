@@ -1,0 +1,10 @@
+
+
+pass:
+just finished buttons and chips and now need to figure out icons. YOu're doing all teh simple things that woudl be used by other controls, then back to the list of other controls.
+
+you have the icons css coming in, not sure why it isn't happening. Maybe you need the fonts or the css or what?
+
+there's a whole section on icon right. Read that through.
+
+you have multpile controls that use icons that arne't working with them, button toggle is one of them

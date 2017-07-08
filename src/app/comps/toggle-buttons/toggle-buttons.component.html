@@ -24,7 +24,7 @@
     <md-button-toggle *ngFor="let button of buttons;index as idx"
                       [checked]="button.value"
                       [disabled]="button.disabled"
-                      (change)="change(idx, $event)">
+                      (change)="button.value = !button.value">
       <md-icon>format_align_{{button.name}}</md-icon>
     </md-button-toggle>
   </md-button-toggle-group>
