@@ -16,6 +16,11 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { ToggleButtonsComponent } from './toggle-buttons/toggle-buttons.component';
 import { ChipsComponent } from './chips/chips.component';
+import { IconsComponent } from './icons/icons.component';
+import { SpinnersComponent } from './spinners/spinners.component';
+import { DkProgressComponent } from './progress/progress.component';
+import { DkCardComponent } from './dk-card/dk-card.component';
+import { DkMenuComponent } from './dk-menu/dk-menu.component';
 
 @NgModule({
   imports: [
@@ -40,6 +45,11 @@ import { ChipsComponent } from './chips/chips.component';
     ButtonsComponent,
     ToggleButtonsComponent,
     ChipsComponent,
+    IconsComponent,
+    SpinnersComponent,
+    DkProgressComponent,
+    DkCardComponent,
+    DkMenuComponent,
   ],
   exports: [
     CheckboxComponent,
@@ -54,6 +64,11 @@ import { ChipsComponent } from './chips/chips.component';
     ButtonsComponent,
     ToggleButtonsComponent,
     ChipsComponent,
+    IconsComponent,
+    SpinnersComponent,
+    DkProgressComponent,
+    DkCardComponent,
+    DkMenuComponent,
   ]
 })
 export class CompsModule { }

@@ -1,0 +1,38 @@
+
+<section>
+  <md-checkbox [(ngModel)]="footer">footer</md-checkbox><br>
+  <md-checkbox [(ngModel)]="actions">action</md-checkbox>
+  <span *ngIf="actions">
+    <br>align:
+    <md-radio-group [(ngModel)]="align">
+      <md-radio-button value="start">start</md-radio-button>
+      <md-radio-button value="end">end</md-radio-button>
+    </md-radio-group>
+  </span>
+</section>
+
+<div style="padding:30px;">
+
+  <md-card>simple</md-card>
+  <br><br>
+  <md-card>
+    <md-card-header>
+      <md-card-title>The Title</md-card-title>
+      <md-card-subtitle>my subtitle</md-card-subtitle>
+    </md-card-header>
+    <md-card-content>
+      dfsd sdfsd fasdf sdfsdfsdfsdfsda fas df sda f sdaf sad f asdfasdf asdf as df asd fa sdf asd f asdf asd f asdf sad
+      dfsd sdfsd fasdf sdfsdfsdfsdfsda fas df sda f sdaf sad f asdfasdf asdf as df asd fa sdf asd f asdf asd f asdf sad
+    </md-card-content>
+    <md-card-actions *ngIf="actions">
+      <button md-button>Cancel</button>
+      <button md-button>OK</button>
+      // no align property on actions currrently
+    </md-card-actions>
+    <md-card-footer *ngIf="footer">
+      my footer
+    </md-card-footer>
+  </md-card>
+  <br><br>
+
+</div>
