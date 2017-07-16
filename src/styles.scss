@@ -5,3 +5,16 @@
 section {
   margin-bottom: 14px;
 }
+
+
+// flex helper styles
+//container
+.space-between {
+  justify-content: space-between;
+}
+
+//child
+.spacer {
+  flex-grow: 1;
+}
+

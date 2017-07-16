@@ -22,6 +22,8 @@ import { DkProgressComponent } from './progress/progress.component';
 import { DkCardComponent } from './dk-card/dk-card.component';
 import { DkMenuComponent } from './dk-menu/dk-menu.component';
 import { DkSidenavComponent } from './dk-sidenav/dk-sidenav.component';
+import { DkToolbarComponent } from './dk-toolbar/dk-toolbar.component';
+import { DkListComponent } from './dk-list/dk-list.component';
 
 @NgModule({
   imports: [
@@ -52,6 +54,8 @@ import { DkSidenavComponent } from './dk-sidenav/dk-sidenav.component';
     DkCardComponent,
     DkMenuComponent,
     DkSidenavComponent,
+    DkToolbarComponent,
+    DkListComponent,
   ],
   exports: [
     CheckboxComponent,
@@ -72,6 +76,8 @@ import { DkSidenavComponent } from './dk-sidenav/dk-sidenav.component';
     DkCardComponent,
     DkMenuComponent,
     DkSidenavComponent,
+    DkToolbarComponent,
+    DkListComponent,
   ]
 })
 export class CompsModule { }
