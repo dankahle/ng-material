@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './fx-play.component.html',
   styleUrls: ['./fx-play.component.scss']
 })
-export class FxPlayComponent implements OnInit {
-
+export class FxPlayComponent {
+  direction = 'row';
   constructor() { }
 
-  ngOnInit() {
+  toggle() {
+    this.direction = (this.direction === 'row') ? 'column' : 'row';
   }
+
 
 }
