@@ -1,4 +1,15 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
+
+
+@Injectable()
+class UsefulService {
+}
+
+@Injectable()
+class NeedsService {
+  constructor(public service: UsefulService) {}
+}
+
 
 @Component({
   selector: 'app-root',

@@ -8,6 +8,7 @@ import {MaterialModModule} from "./material-mod/material-mod.module";
 import {CheckboxComponent} from "./comps/checkbox/checkbox.component";
 import {FormsModule} from "@angular/forms";
 import {CompsModule} from "./comps/comps.module";
+import {FlexModule} from "./flex/flex.module";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {CompsModule} from "./comps/comps.module";
     FormsModule,
     BrowserAnimationsModule,
     MaterialModModule,
-    CompsModule
+    CompsModule,
+    FlexModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,31 @@
+
+* {
+  outline: 1px solid;
+  outline-offset: -1px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.nav {
+  flex: 0 0 20%;
+}
+
+.middle {
+  flex: 0 0 60%;
+}
+
+header, footer {
+  flex: 0 0 100px;
+}
+
+
