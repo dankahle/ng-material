@@ -2,6 +2,11 @@
 
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+
+html, body {
+  height: 100%;
+}
+
 section {
   margin-bottom: 14px;
 }
@@ -17,4 +22,5 @@ section {
 .spacer {
   flex-grow: 1;
 }
+
 
