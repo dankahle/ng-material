@@ -17,5 +17,9 @@ class NeedsService {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+links = [
+  {url: '/one', label: 'one'},
+  {url: '/two', label: 'two'},
+]
+
 }

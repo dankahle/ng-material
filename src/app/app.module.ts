@@ -9,6 +9,7 @@ import {CheckboxComponent} from "./comps/checkbox/checkbox.component";
 import {FormsModule} from "@angular/forms";
 import {CompsModule} from "./comps/comps.module";
 import {FlexModule} from "./flex/flex.module";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,11 @@ import {FlexModule} from "./flex/flex.module";
     BrowserAnimationsModule,
     MaterialModModule,
     CompsModule,
-    FlexModule
+    FlexModule,
+    RouterModule.forRoot(
+      [],
+      { enableTracing: true } // <-- debugging purposes only
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,18 @@
 
-<dk-grid-list></dk-grid-list>
+<nav md-tab-nav-bar>
+  <a md-tab-link
+     *ngFor="let link of links"
+     [routerLink]="link.url"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    {{link.label}}
+  </a>
+</nav>
+
+<router-outlet></router-outlet>
+
+
+<!--<dk-grid-list></dk-grid-list>-->
 
 <!--<dk-fx-play></dk-fx-play>-->
 

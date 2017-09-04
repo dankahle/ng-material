@@ -25,6 +25,8 @@ import {DkMenuComponent} from "./navigation/dk-menu/dk-menu.component";
 import {DkSidenavComponent} from "./navigation/dk-sidenav/dk-sidenav.component";
 import {DkToolbarComponent} from "./navigation/dk-toolbar/dk-toolbar.component";
 import {DkListComponent} from "./layout/dk-list/dk-list.component";
+import {TabsComponent} from "./layout/tabs/tabs.component";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   imports: [
@@ -32,7 +34,8 @@ import {DkListComponent} from "./layout/dk-list/dk-list.component";
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MaterialModModule
+    MaterialModModule,
+    RouterModule
   ],
   declarations: [
     CheckboxComponent,
@@ -58,6 +61,7 @@ import {DkListComponent} from "./layout/dk-list/dk-list.component";
     DkToolbarComponent,
     DkListComponent,
     GridListComponent,
+    TabsComponent,
   ],
   exports: [
     CheckboxComponent,
@@ -81,6 +85,8 @@ import {DkListComponent} from "./layout/dk-list/dk-list.component";
     DkToolbarComponent,
     DkListComponent,
     GridListComponent,
+    TabsComponent,
+
   ]
 })
 export class CompsModule { }
