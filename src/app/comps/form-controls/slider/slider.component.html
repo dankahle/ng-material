@@ -1,15 +1,15 @@
 
 <section>
-  <md-input-container><input mdInput type="number" [(ngModel)]="min" placeholder="min"></md-input-container><br>
-  <md-input-container><input mdInput type="number" [(ngModel)]="max" placeholder="max"></md-input-container><br>
-  <md-input-container><input mdInput type="number" [(ngModel)]="step" placeholder="step"></md-input-container><br>
+  <md-form-field><input mdInput type="number" [(ngModel)]="min" placeholder="min"></md-form-field><br>
+  <md-form-field><input mdInput type="number" [(ngModel)]="max" placeholder="max"></md-form-field><br>
+  <md-form-field><input mdInput type="number" [(ngModel)]="step" placeholder="step"></md-form-field><br>
 
 <section>  <md-checkbox [(ngModel)]="ticks">show ticks</md-checkbox>
   <span *ngIf="ticks">
   <md-checkbox [(ngModel)]="auto">auto</md-checkbox>
-  <md-input-container *ngIf="ticks && !auto">
+  <md-form-field *ngIf="ticks && !auto">
     <input mdInput type="number" [(ngModel)]="tickInterval" placeholder="tickInterval">
-  </md-input-container>
+  </md-form-field>
   </span>
 </section>
 

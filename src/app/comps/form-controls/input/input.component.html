@@ -4,7 +4,7 @@
 </section>
 <section>
   <h3>input</h3>
-  <md-input-container  hintLabel="my hint" color="warn">
+  <md-form-field  hintLabel="my hint" color="warn">
     <span mdPrefix style="margin-right:10px;">prefix </span>
     <input #input
       autofocus
@@ -15,18 +15,18 @@
     >
     <span mdSuffix>suffix</span>
     <md-error>my error</md-error>
-  </md-input-container>
+  </md-form-field>
   <br><br>food: {{food}}
 </section>
 <br><br>
 <section>
   <h3>textarea</h3>
-  <md-input-container color="warn">
+  <md-form-field color="warn">
     <span mdPrefix style="margin-right:10px;">prefix </span>
     <textarea #resize="mdTextareaAutosize" mdTextareaAutosize mdAutosizeMinRows="3" mdInput placeholder="fave desc" [(ngModel)]="desc" required></textarea>
     <span mdSuffix>suffix</span>
     <md-error>my error</md-error>
     <md-hint align="end">my desc hint</md-hint>
-  </md-input-container>
+  </md-form-field>
   <br><br>desc: {{desc}}
 </section>

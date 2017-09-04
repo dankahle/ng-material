@@ -30,6 +30,9 @@ import {RouterModule} from "@angular/router";
 import { DialogComponent } from './popups-modals/dialog/dialog.component';
 import { DialogChildComponent } from './popups-modals/dialog/dialog-child/dialog-child.component';
 import { TooltipComponent } from './popups-modals/tooltip/tooltip.component';
+import { SnackBarComponent } from './popups-modals/snack-bar/snack-bar.component';
+import { SnackBarChildComponent } from './popups-modals/snack-bar/snack-bar-child/snack-bar-child.component';
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 @NgModule({
   imports: [
@@ -38,7 +41,8 @@ import { TooltipComponent } from './popups-modals/tooltip/tooltip.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialModModule,
-    RouterModule
+    RouterModule,
+    FlexLayoutModule
   ],
   declarations: [
     CheckboxComponent,
@@ -68,6 +72,8 @@ import { TooltipComponent } from './popups-modals/tooltip/tooltip.component';
     DialogComponent,
     DialogChildComponent,
     TooltipComponent,
+    SnackBarComponent,
+    SnackBarChildComponent,
   ],
   exports: [
     CheckboxComponent,
@@ -95,7 +101,9 @@ import { TooltipComponent } from './popups-modals/tooltip/tooltip.component';
     DialogComponent,
     DialogChildComponent,
     TooltipComponent,
+    SnackBarComponent,
+    SnackBarChildComponent,
   ],
-  entryComponents: [DialogChildComponent]
+  entryComponents: [DialogChildComponent, SnackBarChildComponent]
 })
 export class CompsModule { }

@@ -1,0 +1,13 @@
+
+<div fxLayout="row">
+
+  <div fxFlex="grow" class="mat-simple-snackbar">
+    {{data.message}}
+  </div>
+
+  <div fxFlex="">
+    <a href="javascript:void(0)" (click)="mdSnackBarRef.closeWithAction()"
+       class="mat-simple-snackbar-action">{{data.action}}</a>
+  </div>
+
+</div>
