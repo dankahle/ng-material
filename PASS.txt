@@ -3,8 +3,6 @@
 
 
 popups and modal:
-dialog
-tooltip
 snackbar
 
 datatable:

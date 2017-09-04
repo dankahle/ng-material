@@ -29,6 +29,7 @@ import {TabsComponent} from "./layout/tabs/tabs.component";
 import {RouterModule} from "@angular/router";
 import { DialogComponent } from './popups-modals/dialog/dialog.component';
 import { DialogChildComponent } from './popups-modals/dialog/dialog-child/dialog-child.component';
+import { TooltipComponent } from './popups-modals/tooltip/tooltip.component';
 
 @NgModule({
   imports: [
@@ -66,6 +67,7 @@ import { DialogChildComponent } from './popups-modals/dialog/dialog-child/dialog
     TabsComponent,
     DialogComponent,
     DialogChildComponent,
+    TooltipComponent,
   ],
   exports: [
     CheckboxComponent,
@@ -92,6 +94,7 @@ import { DialogChildComponent } from './popups-modals/dialog/dialog-child/dialog
     TabsComponent,
     DialogComponent,
     DialogChildComponent,
+    TooltipComponent,
   ],
   entryComponents: [DialogChildComponent]
 })
