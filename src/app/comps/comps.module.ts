@@ -27,6 +27,8 @@ import {DkToolbarComponent} from "./navigation/dk-toolbar/dk-toolbar.component";
 import {DkListComponent} from "./layout/dk-list/dk-list.component";
 import {TabsComponent} from "./layout/tabs/tabs.component";
 import {RouterModule} from "@angular/router";
+import { DialogComponent } from './popups-modals/dialog/dialog.component';
+import { DialogChildComponent } from './popups-modals/dialog/dialog-child/dialog-child.component';
 
 @NgModule({
   imports: [
@@ -62,6 +64,8 @@ import {RouterModule} from "@angular/router";
     DkListComponent,
     GridListComponent,
     TabsComponent,
+    DialogComponent,
+    DialogChildComponent,
   ],
   exports: [
     CheckboxComponent,
@@ -86,7 +90,9 @@ import {RouterModule} from "@angular/router";
     DkListComponent,
     GridListComponent,
     TabsComponent,
-
-  ]
+    DialogComponent,
+    DialogChildComponent,
+  ],
+  entryComponents: [DialogChildComponent]
 })
 export class CompsModule { }

@@ -1,0 +1,19 @@
+
+
+<md-input-container>
+  <input mdInput placeholder="name" [(ngModel)]="obj.name">
+</md-input-container><br>
+
+<md-input-container>
+  <input mdInput placeholder="age" [(ngModel)]="obj.age">
+</md-input-container><br>
+
+<div>
+  <button (click)="addAddr()">add addr</button>
+</div>
+<br>
+<h5>addresses</h5>
+<div *ngFor="let add of obj.addrs">
+  street: {{add.street}}<br>
+  city: {{add.city}}
+</div>

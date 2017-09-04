@@ -1,0 +1,20 @@
+
+<h4 md-dialog-title>enter address</h4><br>
+
+<div md-dialog-content>
+
+  <div *ngIf="data.name">welcome {{data.name}}</div><br>
+
+  <md-input-container>
+    <input mdInput [(ngModel)]="addr.street" placeholder="street" tabindex="1">
+  </md-input-container><br>
+  <md-input-container><br>
+    <input mdInput [(ngModel)]="addr.city" placeholder="city" tabindex="2">
+  </md-input-container><br>
+
+</div>
+
+<div md-dialog-actions="">
+  <button md-button md-dialog-close tabindex="-1">cancel</button>
+  <button md-button [md-dialog-close]="addr" tabindex="3">ok</button>
+</div>

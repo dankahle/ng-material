@@ -2,9 +2,6 @@
 
 
 
-layout:
-tabs
-
 popups and modal:
 dialog
 tooltip
