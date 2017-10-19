@@ -1,56 +1,56 @@
 
 <section>
   <button (click)="triggerMenu($event)">manual trigger</button><br>
-<md-card>
-  <md-card-header><md-card-title>Settings</md-card-title></md-card-header>
-  <md-card-subtitle>
+<mat-card>
+  <mat-card-header><mat-card-title>Settings</mat-card-title></mat-card-header>
+  <mat-card-subtitle>
     NONE OF THESE SETTINGS WORK, you have to set these manually as strings instead. <br>
     overlap=false: puts it below instead of coming off the left top corner and overlapping the element.
     In all settings comes off a corner of the trigger. It will either be top/bottom left/right for corners
-  </md-card-subtitle>
-<md-card-content>
-  <md-checkbox [(ngModel)]="overlapTrigger">overlapTrigger</md-checkbox><br>
-  <md-radio-group [(ngModel)]="xPosition">
-    <md-radio-button value="before">before</md-radio-button>
-    <md-radio-button value="after">after</md-radio-button>
-  </md-radio-group><br>
-  <md-radio-group [(ngModel)]="yPosition">
-    <md-radio-button value="above">above</md-radio-button>
-    <md-radio-button value="below">below</md-radio-button>
-  </md-radio-group><br>
-</md-card-content></md-card>
+  </mat-card-subtitle>
+<mat-card-content>
+  <mat-checkbox [(ngModel)]="overlapTrigger">overlapTrigger</mat-checkbox><br>
+  <mat-radio-group [(ngModel)]="xPosition">
+    <mat-radio-button value="before">before</mat-radio-button>
+    <mat-radio-button value="after">after</mat-radio-button>
+  </mat-radio-group><br>
+  <mat-radio-group [(ngModel)]="yPosition">
+    <mat-radio-button value="above">above</mat-radio-button>
+    <mat-radio-button value="below">below</mat-radio-button>
+  </mat-radio-group><br>
+</mat-card-content></mat-card>
 </section>
 
 <h4>menu with overlap setting</h4>
-<button md-button [mdMenuTriggerFor]="menu">
-  <md-icon>more_vert</md-icon>
+<button mat-button [matMenuTriggerFor]="menu">
+  <mat-icon>more_vert</mat-icon>
 </button>
-<md-menu #menu="mdMenu" [overlapTrigger]="overlapTrigger">
-  <button md-menu-item>
-    <md-icon> dialpad </md-icon>
+<mat-menu #menu="matMenu" [overlapTrigger]="overlapTrigger">
+  <button mat-menu-item>
+    <mat-icon> dialpad </mat-icon>
     <span> Redial </span>
   </button>
-  <button md-menu-item disabled>
-    <md-icon> voicemail </md-icon>
+  <button mat-menu-item disabled>
+    <mat-icon> voicemail </mat-icon>
     <span> Check voicemail </span>
   </button>
-  <button md-menu-item>
-    <md-icon> notifications_off </md-icon>
+  <button mat-menu-item>
+    <mat-icon> notifications_off </mat-icon>
     <span> Disable alerts </span>
   </button>
-</md-menu>
+</mat-menu>
 
 <br>
 <h4>menu with xposition/yposition settings</h4>
-<button md-button [mdMenuTriggerFor]="menu2" style="margin-left:150px;">
-  <md-icon>more_vert</md-icon>
+<button mat-button [matMenuTriggerFor]="menu2" style="margin-left:150px;">
+  <mat-icon>more_vert</mat-icon>
 </button>
-<md-menu #menu2="mdMenu" [xPosition]="xPosition" [yPosition]="yPosition">
-  <button md-menu-item>one</button>
-  <button md-menu-item>one</button>
-  <button md-menu-item>one</button>
-  <button md-menu-item>one</button>
-</md-menu>
+<mat-menu #menu2="matMenu" [xPosition]="xPosition" [yPosition]="yPosition">
+  <button mat-menu-item>one</button>
+  <button mat-menu-item>one</button>
+  <button mat-menu-item>one</button>
+  <button mat-menu-item>one</button>
+</mat-menu>
 <pre>
   {{overlapTrigger}}<br>
   {{xPosition}}<br>

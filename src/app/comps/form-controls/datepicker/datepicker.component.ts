@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {MdDatepicker} from "@angular/material";
+import {MatDatepicker} from "@angular/material";
 
 @Component({
   selector: 'datepicker',
@@ -14,7 +14,7 @@ export class DatepickerComponent implements OnInit {
   }
 
 /*
-  @ViewChild(MdDatepicker) dp: MdDatepicker<Date>;
+  @ViewChild(MatDatepicker) dp: MatDatepicker<Date>;
 
   ngAfterViewInit() {
     this.dp.open();

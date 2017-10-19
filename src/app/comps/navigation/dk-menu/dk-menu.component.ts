@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {MdMenu, MdMenuTrigger} from "@angular/material";
+import {MatMenu, MatMenuTrigger} from "@angular/material";
 
 @Component({
   selector: 'dk-menu',
@@ -8,11 +8,11 @@ import {MdMenu, MdMenuTrigger} from "@angular/material";
 })
 export class DkMenuComponent implements OnInit {
   log = console.log;
-  @ViewChild(MdMenuTrigger) trigger: MdMenuTrigger;
+  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
   xPosition = 'before';
   yPosition = 'above';
   overlap = true;
-  @ViewChild('menu2') menu2:MdMenu;
+  @ViewChild('menu2') menu2:MatMenu;
 
   constructor() { }
 
@@ -24,7 +24,7 @@ export class DkMenuComponent implements OnInit {
   }
 
   triggerMenu() {
-    // still need the MdMenuTriggerFor directive attached to an element, so not sure what you buy here then
+    // still need the MatMenuTriggerFor directive attached to an element, so not sure what you buy here then
     this.trigger.openMenu();
   }
 }

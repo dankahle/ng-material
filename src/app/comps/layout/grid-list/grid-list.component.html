@@ -1,14 +1,14 @@
 
 
-<md-grid-list cols="4" rowHeight="200px" gutterSize="5px" >
-  <md-grid-tile
+<mat-grid-list cols="4" rowHeight="200px" gutterSize="5px" >
+  <mat-grid-tile
     *ngFor="let tile of tiles"
     [colspan]="tile.cols"
     [rowspan]="tile.rows"
     [style.background]="tile.color">
-    <md-grid-tile-header>header</md-grid-tile-header>
+    <mat-grid-tile-header>header</mat-grid-tile-header>
     {{tile.text}}
-    <md-grid-tile-footer>footer</md-grid-tile-footer>
-  </md-grid-tile>
-</md-grid-list>
+    <mat-grid-tile-footer>footer</mat-grid-tile-footer>
+  </mat-grid-tile>
+</mat-grid-list>
 

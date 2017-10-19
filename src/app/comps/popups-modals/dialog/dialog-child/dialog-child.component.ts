@@ -1,5 +1,5 @@
 import {Component, Inject, OnInit} from '@angular/core';
-import {MD_DIALOG_DATA} from "@angular/material";
+import {MAT_DIALOG_DATA} from "@angular/material";
 import {Addr} from "../dialog.component";
 
 @Component({
@@ -9,7 +9,7 @@ import {Addr} from "../dialog.component";
 })
 export class DialogChildComponent {
   addr:Addr = <Addr>{};
-  constructor(@Inject(MD_DIALOG_DATA) public data: any) {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
     const i = 5;
   }
 }

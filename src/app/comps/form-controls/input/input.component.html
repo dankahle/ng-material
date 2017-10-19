@@ -1,32 +1,32 @@
 
 <section>
-  <md-checkbox [(ngModel)]="disabled">disabled</md-checkbox>
+  <mat-checkbox [(ngModel)]="disabled">disabled</mat-checkbox>
 </section>
 <section>
   <h3>input</h3>
-  <md-form-field  hintLabel="my hint" color="warn">
-    <span mdPrefix style="margin-right:10px;">prefix </span>
+  <mat-form-field  hintLabel="my hint" color="warn">
+    <span matPrefix style="margin-right:10px;">prefix </span>
     <input #input
       autofocus
-      mdInput placeholder="fave food"
+      matInput placeholder="fave food"
       [(ngModel)]="food"
       required
       [disabled]="disabled"
     >
-    <span mdSuffix>suffix</span>
-    <md-error>my error</md-error>
-  </md-form-field>
+    <span matSuffix>suffix</span>
+    <mat-error>my error</mat-error>
+  </mat-form-field>
   <br><br>food: {{food}}
 </section>
 <br><br>
 <section>
   <h3>textarea</h3>
-  <md-form-field color="warn">
-    <span mdPrefix style="margin-right:10px;">prefix </span>
-    <textarea #resize="mdTextareaAutosize" mdTextareaAutosize mdAutosizeMinRows="3" mdInput placeholder="fave desc" [(ngModel)]="desc" required></textarea>
-    <span mdSuffix>suffix</span>
-    <md-error>my error</md-error>
-    <md-hint align="end">my desc hint</md-hint>
-  </md-form-field>
+  <mat-form-field color="warn">
+    <span matPrefix style="margin-right:10px;">prefix </span>
+    <textarea #resize="matTextareaAutosize" matTextareaAutosize matAutosizeMinRows="3" matInput placeholder="fave desc" [(ngModel)]="desc" required></textarea>
+    <span matSuffix>suffix</span>
+    <mat-error>my error</mat-error>
+    <mat-hint align="end">my desc hint</mat-hint>
+  </mat-form-field>
   <br><br>desc: {{desc}}
 </section>

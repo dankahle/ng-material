@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {MdTextareaAutosize} from "@angular/material";
+import {MatTextareaAutosize} from "@angular/material";
 
 @Component({
   selector: 'dk-input',
@@ -9,7 +9,7 @@ import {MdTextareaAutosize} from "@angular/material";
 export class InputComponent implements OnInit {
   food = 'apricot';
   desc = 'one \ntwo\n\three\nfour\n';
-  @ViewChild('resize') ta:MdTextareaAutosize ;
+  @ViewChild('resize') ta:MatTextareaAutosize ;
   @ViewChild('input') input;
 
   constructor() { }

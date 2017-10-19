@@ -1,34 +1,34 @@
 
-<md-card>
-  <md-card-header>
-    <md-card-title><h3>Sidenav</h3></md-card-title>
-  </md-card-header>
-  <md-card-content>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title><h3>Sidenav</h3></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
     <br>mode:
-    <md-radio-group [(ngModel)]="mode">
-      <md-radio-button value="over">over</md-radio-button>
-      <md-radio-button value="push">push</md-radio-button>
-      <md-radio-button value="side">side</md-radio-button>
-    </md-radio-group>
+    <mat-radio-group [(ngModel)]="mode">
+      <mat-radio-button value="over">over</mat-radio-button>
+      <mat-radio-button value="push">push</mat-radio-button>
+      <mat-radio-button value="side">side</mat-radio-button>
+    </mat-radio-group>
     <br>align:
-    <md-radio-group [(ngModel)]="align">
-      <md-radio-button value="start">start</md-radio-button>
-      <md-radio-button value="end">end</md-radio-button>
-    </md-radio-group>
-  </md-card-content>
-</md-card>
+    <mat-radio-group [(ngModel)]="align">
+      <mat-radio-button value="start">start</mat-radio-button>
+      <mat-radio-button value="end">end</mat-radio-button>
+    </mat-radio-group>
+  </mat-card-content>
+</mat-card>
 
 <div style="padding:30px;">
-  <md-sidenav-container class="example-container">
-  <md-sidenav #sidenav class="example-sidenav" [mode]="mode" [align]="align">
+  <mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav class="example-sidenav" [mode]="mode" [align]="align">
     Jolly good!
-  </md-sidenav>
+  </mat-sidenav>
 
   <div class="example-sidenav-content">
-    <button type="button" md-button (click)="sidenav.open()">
+    <button type="button" mat-button (click)="sidenav.open()">
       Open sidenav
     </button>
   </div>
 
-</md-sidenav-container>
+</mat-sidenav-container>
 </div>

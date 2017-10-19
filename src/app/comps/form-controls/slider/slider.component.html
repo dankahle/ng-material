@@ -1,27 +1,27 @@
 
 <section>
-  <md-form-field><input mdInput type="number" [(ngModel)]="min" placeholder="min"></md-form-field><br>
-  <md-form-field><input mdInput type="number" [(ngModel)]="max" placeholder="max"></md-form-field><br>
-  <md-form-field><input mdInput type="number" [(ngModel)]="step" placeholder="step"></md-form-field><br>
+  <mat-form-field><input matInput type="number" [(ngModel)]="min" placeholder="min"></mat-form-field><br>
+  <mat-form-field><input matInput type="number" [(ngModel)]="max" placeholder="max"></mat-form-field><br>
+  <mat-form-field><input matInput type="number" [(ngModel)]="step" placeholder="step"></mat-form-field><br>
 
-<section>  <md-checkbox [(ngModel)]="ticks">show ticks</md-checkbox>
+<section>  <mat-checkbox [(ngModel)]="ticks">show ticks</mat-checkbox>
   <span *ngIf="ticks">
-  <md-checkbox [(ngModel)]="auto">auto</md-checkbox>
-  <md-form-field *ngIf="ticks && !auto">
-    <input mdInput type="number" [(ngModel)]="tickInterval" placeholder="tickInterval">
-  </md-form-field>
+  <mat-checkbox [(ngModel)]="auto">auto</mat-checkbox>
+  <mat-form-field *ngIf="ticks && !auto">
+    <input matInput type="number" [(ngModel)]="tickInterval" placeholder="tickInterval">
+  </mat-form-field>
   </span>
 </section>
 
-  <md-checkbox [(ngModel)]="thumbLabel">thumbLabel</md-checkbox><br>
+  <mat-checkbox [(ngModel)]="thumbLabel">thumbLabel</mat-checkbox><br>
 </section>
 <section>
-  <md-slider style="width:300px;"
+  <mat-slider style="width:300px;"
     [min]="min"
     [max]="max"
     [step]="step"
     [tickInterval]="tickInterval"
     [thumbLabel]="thumbLabel"
     (change)="log($event.value)"
-  ></md-slider>
+  ></mat-slider>
 </section>

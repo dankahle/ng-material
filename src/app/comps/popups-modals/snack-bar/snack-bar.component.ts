@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MdSnackBar, MdSnackBarConfig} from "@angular/material";
+import {MatSnackBar, MatSnackBarConfig} from "@angular/material";
 import {SnackBarChildComponent} from "./snack-bar-child/snack-bar-child.component";
 
 @Component({
@@ -8,10 +8,10 @@ import {SnackBarChildComponent} from "./snack-bar-child/snack-bar-child.componen
   styleUrls: ['./snack-bar.component.scss']
 })
 export class SnackBarComponent {
-  constructor(private mdSnackBar: MdSnackBar) { }
+  constructor(private mdSnackBar: MatSnackBar) { }
 
   open(message, action) {
-    const ref = this.mdSnackBar.open(message, action, <MdSnackBarConfig>{
+    const ref = this.mdSnackBar.open(message, action, <MatSnackBarConfig>{
       // duration: 3000,
       data: {name: 'dank'}
     });
@@ -20,7 +20,7 @@ export class SnackBarComponent {
   }
 
   openChild(message, action) {
-    const ref = this.mdSnackBar.openFromComponent(SnackBarChildComponent, <MdSnackBarConfig>{
+    const ref = this.mdSnackBar.openFromComponent(SnackBarChildComponent, <MatSnackBarConfig>{
       // duration: 3000,
       data: {
         message: message,

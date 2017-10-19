@@ -1,11 +1,11 @@
 
 <section>
-  <md-form-field>
-    <input mdInput type="number" [(ngModel)]="strokeWidth" placeholder="strokeWidth">
-  </md-form-field>
+  <mat-form-field>
+    <input matInput type="number" [(ngModel)]="strokeWidth" placeholder="strokeWidth">
+  </mat-form-field>
 </section>
 
 <section>
-  <md-spinner></md-spinner><br>
-  <md-progress-spinner [value]="val" [strokeWidth]="strokeWidth"></md-progress-spinner><br>
+  <mat-spinner></mat-spinner><br>
+  <mat-progress-spinner [value]="val" [strokeWidth]="strokeWidth"></mat-progress-spinner><br>
 </section>

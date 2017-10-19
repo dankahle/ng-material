@@ -1,20 +1,20 @@
 
-<h4 md-dialog-title>enter address</h4><br>
+<h4 mat-dialog-title>enter address</h4><br>
 
-<div md-dialog-content>
+<div mat-dialog-content>
 
   <div *ngIf="data.name">welcome {{data.name}}</div><br>
 
-  <md-form-field>
-    <input mdInput [(ngModel)]="addr.street" placeholder="street" tabindex="1">
-  </md-form-field><br>
-  <md-form-field><br>
-    <input mdInput [(ngModel)]="addr.city" placeholder="city" tabindex="2">
-  </md-form-field><br>
+  <mat-form-field>
+    <input matInput [(ngModel)]="addr.street" placeholder="street" tabindex="1">
+  </mat-form-field><br>
+  <mat-form-field><br>
+    <input matInput [(ngModel)]="addr.city" placeholder="city" tabindex="2">
+  </mat-form-field><br>
 
 </div>
 
-<div md-dialog-actions="">
-  <button md-button md-dialog-close tabindex="-1">cancel</button>
-  <button md-button [md-dialog-close]="addr" tabindex="3">ok</button>
+<div mat-dialog-actions="">
+  <button mat-button mat-dialog-close tabindex="-1">cancel</button>
+  <button mat-button [mat-dialog-close]="addr" tabindex="3">ok</button>
 </div>

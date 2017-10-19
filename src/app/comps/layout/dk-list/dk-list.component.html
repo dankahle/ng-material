@@ -1,100 +1,100 @@
-<md-card>
+<mat-card>
   basic list
-  <md-list>
-    <md-list-item> Pepper</md-list-item>
-    <md-list-item> Salt</md-list-item>
-    <md-list-item> Paprika</md-list-item>
-  </md-list>
-</md-card>
+  <mat-list>
+    <mat-list-item> Pepper</mat-list-item>
+    <mat-list-item> Salt</mat-list-item>
+    <mat-list-item> Paprika</mat-list-item>
+  </mat-list>
+</mat-card>
 
-<md-card>
+<mat-card>
   dense list
-  <md-list dense>
-    <md-list-item> Pepper</md-list-item>
-    <md-list-item> Salt</md-list-item>
-    <md-list-item> Paprika</md-list-item>
-  </md-list>
-</md-card>
+  <mat-list dense>
+    <mat-list-item> Pepper</mat-list-item>
+    <mat-list-item> Salt</mat-list-item>
+    <mat-list-item> Paprika</mat-list-item>
+  </mat-list>
+</mat-card>
 
-<md-card>
+<mat-card>
   nav list
-  <md-nav-list>
-    <md-list-item *ngFor="let link of ['one', 'two', 'three']">
-      <a md-line href="#">{{ link }}</a>
-      <button md-icon-button (click)="showInfo(link)">
-        <md-icon>info</md-icon>
+  <mat-nav-list>
+    <mat-list-item *ngFor="let link of ['one', 'two', 'three']">
+      <a mat-line href="#">{{ link }}</a>
+      <button mat-icon-button (click)="showInfo(link)">
+        <mat-icon>info</mat-icon>
       </button>
-    </md-list-item>
-  </md-nav-list>
-</md-card>
+    </mat-list-item>
+  </mat-nav-list>
+</mat-card>
 
-<md-card>
+<mat-card>
   2 item list
-  <md-list>
-    <md-list-item *ngFor="let message of messages">
-      <h3 md-line> {{message.from}} </h3>
-      <p md-line>
+  <mat-list>
+    <mat-list-item *ngFor="let message of messages">
+      <h3 mat-line> {{message.from}} </h3>
+      <p mat-line>
         <span> {{message.subject}} </span>
         <span class="demo-2"> -- {{message.content}} </span>
       </p>
-    </md-list-item>
-  </md-list>
-</md-card>
+    </mat-list-item>
+  </mat-list>
+</mat-card>
 
-<md-card>
+<mat-card>
   three line list
-  <md-list>
-    <md-list-item *ngFor="let message of messages">
-      <h3 md-line> {{message.from}} </h3>
-      <p md-line> {{message.subject}} </p>
-      <p md-line class="demo-2"> {{message.content}} </p>
-    </md-list-item>
-  </md-list>
-</md-card>
+  <mat-list>
+    <mat-list-item *ngFor="let message of messages">
+      <h3 mat-line> {{message.from}} </h3>
+      <p mat-line> {{message.subject}} </p>
+      <p mat-line class="demo-2"> {{message.content}} </p>
+    </mat-list-item>
+  </mat-list>
+</mat-card>
 
-<md-card>
+<mat-card>
   icon list
-  <md-list>
-    <md-list-item *ngFor="let message of messages">
-      <md-icon md-list-icon>folder</md-icon>
-      <h3 md-line> {{message.from}} </h3>
-      <p md-line>
+  <mat-list>
+    <mat-list-item *ngFor="let message of messages">
+      <mat-icon mat-list-icon>folder</mat-icon>
+      <h3 mat-line> {{message.from}} </h3>
+      <p mat-line>
         <span> {{message.subject}} </span>
         <span class="demo-2"> -- {{message.content}} </span>
       </p>
-    </md-list-item>
-  </md-list>
-</md-card>
+    </mat-list-item>
+  </mat-list>
+</mat-card>
 
-<md-card>
+<mat-card>
   avatar list
-  <md-list>
-    <md-list-item *ngFor="let message of messages">
-      <img md-list-avatar src="{{message.avatar}}" alt="...">
-      <h3 md-line> {{message.from}} </h3>
-      <p md-line>
+  <mat-list>
+    <mat-list-item *ngFor="let message of messages">
+      <img mat-list-avatar src="{{message.avatar}}" alt="...">
+      <h3 mat-line> {{message.from}} </h3>
+      <p mat-line>
         <span> {{message.subject}} </span>
         <span class="demo-2"> -- {{message.content}} </span>
       </p>
-    </md-list-item>
-  </md-list>
-</md-card>
+    </mat-list-item>
+  </mat-list>
+</mat-card>
 
-<md-card>
+<mat-card>
   multiple sections (subheader (folders/notes), divider)
-  <md-list>
-    <h3 md-subheader>Folders</h3>
-    <md-list-item *ngFor="let folder of folders">
-      <md-icon md-list-icon>folder</md-icon>
-      <h4 md-line>{{folder.name}}</h4>
-      <p md-line> {{folder.updated | date}} </p>
-    </md-list-item>
-    <md-divider></md-divider>
-    <h3 md-subheader>Notes</h3>
-    <md-list-item *ngFor="let note of notes">
-      <md-icon md-list-icon>note</md-icon>
-      <h4 md-line>{{note.name}}</h4>
-      <p md-line> {{note.updated | date}} </p>
-    </md-list-item>
-  </md-list>
-</md-card>
+  <mat-list>
+    <h3 mat-subheader>Folders</h3>
+    <mat-list-item *ngFor="let folder of folders">
+      <mat-icon mat-list-icon>folder</mat-icon>
+      <h4 mat-line>{{folder.name}}</h4>
+      <p mat-line> {{folder.updated | date}} </p>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <h3 mat-subheader>Notes</h3>
+    <mat-list-item *ngFor="let note of notes">
+      <mat-icon mat-list-icon>note</mat-icon>
+      <h4 mat-line>{{note.name}}</h4>
+      <p mat-line> {{note.updated | date}} </p>
+    </mat-list-item>
+  </mat-list>
+</mat-card>

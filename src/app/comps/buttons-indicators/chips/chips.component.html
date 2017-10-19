@@ -1,10 +1,10 @@
 
 <section>
-  <md-chip-list>
-  <md-chip *ngFor="let chip of chips"
+  <mat-chip-list>
+  <mat-chip *ngFor="let chip of chips"
   [selected]="chip.selected"
   (click)="chip.selected = !chip.selected"
-  >{{chip.name}}</md-chip>
-</md-chip-list>
+  >{{chip.name}}</mat-chip>
+</mat-chip-list>
 </section>
 <pre>{{chips|json}}</pre>

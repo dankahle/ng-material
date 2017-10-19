@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
-  MdAutocompleteModule, MdButtonModule, MdCheckboxModule, MdDatepickerModule, MdInputModule, MdNativeDateModule,
-  MdRadioModule, MdSelectModule, MdSliderModule, MdSlideToggleModule, MdButtonToggleModule, MdChipsModule, MdIconModule,
-  MdProgressSpinnerModule, MdProgressBarModule, MdCardModule, MdMenuModule, MdSidenavModule, MdToolbarModule,
-  MdListModule, MdGridListModule, MdTabsModule, MdDialogModule, MdTooltipModule, MdSnackBarModule
+  MatAutocompleteModule, MatButtonModule, MatCheckboxModule, MatDatepickerModule, MatInputModule, MatNativeDateModule,
+  MatRadioModule, MatSelectModule, MatSliderModule, MatSlideToggleModule, MatButtonToggleModule, MatChipsModule, MatIconModule,
+  MatProgressSpinnerModule, MatProgressBarModule, MatCardModule, MatMenuModule, MatSidenavModule, MatToolbarModule,
+  MatListModule, MatGridListModule, MatTabsModule, MatDialogModule, MatTooltipModule, MatSnackBarModule
 } from "@angular/material";
 
 @NgModule({
-  imports: [MdButtonModule, MdCheckboxModule, MdRadioModule, MdInputModule, MdAutocompleteModule, MdDatepickerModule,
-    MdNativeDateModule, MdSelectModule, MdSliderModule, MdSlideToggleModule, MdButtonToggleModule, MdChipsModule, MdIconModule,
-    MdProgressSpinnerModule, MdProgressBarModule, MdCardModule, MdMenuModule, MdSidenavModule, MdToolbarModule, MdListModule,
-    MdGridListModule, MdTabsModule, MdDialogModule, MdTooltipModule, MdSnackBarModule],
-  exports: [MdButtonModule, MdCheckboxModule, MdRadioModule, MdInputModule, MdAutocompleteModule, MdDatepickerModule,
-    MdNativeDateModule, MdSelectModule, MdSliderModule, MdSlideToggleModule, MdButtonToggleModule, MdChipsModule, MdIconModule,
-    MdProgressSpinnerModule, MdProgressBarModule, MdCardModule, MdMenuModule, MdSidenavModule, MdToolbarModule, MdListModule,
-    MdGridListModule, MdTabsModule, MdDialogModule, MdTooltipModule, MdSnackBarModule],
+  imports: [MatButtonModule, MatCheckboxModule, MatRadioModule, MatInputModule, MatAutocompleteModule, MatDatepickerModule,
+    MatNativeDateModule, MatSelectModule, MatSliderModule, MatSlideToggleModule, MatButtonToggleModule, MatChipsModule, MatIconModule,
+    MatProgressSpinnerModule, MatProgressBarModule, MatCardModule, MatMenuModule, MatSidenavModule, MatToolbarModule, MatListModule,
+    MatGridListModule, MatTabsModule, MatDialogModule, MatTooltipModule, MatSnackBarModule],
+  exports: [MatButtonModule, MatCheckboxModule, MatRadioModule, MatInputModule, MatAutocompleteModule, MatDatepickerModule,
+    MatNativeDateModule, MatSelectModule, MatSliderModule, MatSlideToggleModule, MatButtonToggleModule, MatChipsModule, MatIconModule,
+    MatProgressSpinnerModule, MatProgressBarModule, MatCardModule, MatMenuModule, MatSidenavModule, MatToolbarModule, MatListModule,
+    MatGridListModule, MatTabsModule, MatDialogModule, MatTooltipModule, MatSnackBarModule],
 })
 export class MaterialModModule { }

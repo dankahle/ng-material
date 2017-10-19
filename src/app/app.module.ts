@@ -21,12 +21,10 @@ import {RouterModule} from "@angular/router";
     MaterialModModule,
     CompsModule,
     FlexModule,
-/*
     RouterModule.forRoot(
       [],
       { enableTracing: true } // <-- debugging purposes only
     )
-*/
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {MdDialog, MdDialogConfig} from "@angular/material";
+import {MatDialog, MatDialogConfig} from "@angular/material";
 import {DialogChildComponent} from "./dialog-child/dialog-child.component";
 
 export interface Addr {
@@ -22,13 +22,13 @@ export class DialogComponent {
   obj:Info = <Info>{
     addrs: <Addr>[]
   };
-  config: MdDialogConfig = {
+  config: MatDialogConfig = {
     width: '400px',
     height: '400px',
     data: {}
   }
 
-  constructor(private mdDialog: MdDialog) {
+  constructor(private mdDialog: MatDialog) {
   }
 
   addAddr() {

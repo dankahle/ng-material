@@ -1,5 +1,5 @@
 import {Component, Inject, OnInit} from '@angular/core';
-import {MD_SNACK_BAR_DATA, MdSnackBarRef} from '@angular/material';
+import {MAT_SNACK_BAR_DATA, MatSnackBarRef} from '@angular/material';
 
 @Component({
   selector: 'dk-snack-bar-child',
@@ -8,7 +8,7 @@ import {MD_SNACK_BAR_DATA, MdSnackBarRef} from '@angular/material';
 })
 export class SnackBarChildComponent {
 
-  constructor(public mdSnackBarRef: MdSnackBarRef<SnackBarChildComponent>, @Inject(MD_SNACK_BAR_DATA) public data: any) { }
+  constructor(public mdSnackBarRef: MatSnackBarRef<SnackBarChildComponent>, @Inject(MAT_SNACK_BAR_DATA) public data: any) { }
 
 
 }

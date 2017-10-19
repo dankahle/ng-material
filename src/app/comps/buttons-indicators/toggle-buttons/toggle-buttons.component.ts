@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MdButtonToggleChange} from "@angular/material";
+import {MatButtonToggleChange} from "@angular/material";
 
 @Component({
   selector: 'toggle-buttons',
