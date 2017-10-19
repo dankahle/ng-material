@@ -3,39 +3,8 @@
 <!--<dk-snack-bar></dk-snack-bar>-->
 <!--<dk-tooltip></dk-tooltip>-->
 <!--<dk-dialog></dk-dialog>-->
-
-<nav mat-tab-nav-bar>
-  <a mat-tab-link
-     *ngFor="let link of links"
-     [routerLink]="link.url"
-     routerLinkActive #rla="routerLinkActive"
-     [active]="rla.isActive">
-    {{link.label}}
-  </a>
-</nav>
-<router-outlet></router-outlet>
-
 <!--<dk-tabs></dk-tabs>-->
-
 <!--<dk-grid-list></dk-grid-list>-->
-
-<!--<dk-fx-play></dk-fx-play>-->
-
-<!--<dk-fx-grid></dk-fx-grid>-->
-
-<!--
-<div style="height:400px;">
-  <div class="appcomp" style="display:inline-block; width:45%; height:100%; padding: 20px;">
-    <div>css</div>
-    <dk-css-holy-grail></dk-css-holy-grail>
-  </div>
-  <div class="appcomp" style="display:inline-block; width:45%; height:100%; padding: 20px;">
-    <div>fx</div>
-    <dk-fx-holy-grail></dk-fx-holy-grail>
-  </div>
-</div>
--->
-
 <!--<checkbox></checkbox>-->
 <!--<auto-complete></auto-complete>-->
 <!--<dk-input></dk-input>-->
@@ -56,5 +25,23 @@
 <!--<dk-sidenav></dk-sidenav>-->
 <!--<dk-toolbar></dk-toolbar>-->
 <!--<dk-list></dk-list>-->
-<!--<dk-fx-card></dk-fx-card>-->
+
+
+<!-- @angular/flex-layout components -->
+
 <!--<dk-fx-play></dk-fx-play>-->
+<!--<dk-fx-card></dk-fx-card>-->
+<!--<dk-fx-grid></dk-fx-grid>-->
+
+<!--
+<div style="height:400px;">
+  <div class="appcomp" style="display:inline-block; width:45%; height:100%; padding: 20px;">
+    <div>css</div>
+    <dk-css-holy-grail></dk-css-holy-grail>
+  </div>
+  <div class="appcomp" style="display:inline-block; width:45%; height:100%; padding: 20px;">
+    <div>fx</div>
+    <dk-fx-holy-grail></dk-fx-holy-grail>
+  </div>
+</div>
+-->

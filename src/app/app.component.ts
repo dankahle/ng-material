@@ -17,9 +17,5 @@ class NeedsService {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-links = [
-  {url: '/one', label: 'one'},
-  {url: '/two', label: 'two'},
-]
 
 }

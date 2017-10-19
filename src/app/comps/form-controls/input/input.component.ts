@@ -8,7 +8,7 @@ import {MatTextareaAutosize} from "@angular/material";
 })
 export class InputComponent implements OnInit {
   food = 'apricot';
-  desc = 'one \ntwo\n\three\nfour\n';
+  desc = 'one \ntwo\nthree\nfour\n';
   @ViewChild('resize') ta:MatTextareaAutosize ;
   @ViewChild('input') input;
 

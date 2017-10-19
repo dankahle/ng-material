@@ -23,7 +23,7 @@ import {RouterModule} from "@angular/router";
     FlexModule,
     RouterModule.forRoot(
       [],
-      { enableTracing: true } // <-- debugging purposes only
+      { enableTracing: false } // <-- debugging purposes only
     )
   ],
   providers: [],

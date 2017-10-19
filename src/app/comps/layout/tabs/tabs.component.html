@@ -1,6 +1,17 @@
 
-
-
+<h3>navbar</h3>
+<nav mat-tab-nav-bar>
+  <a mat-tab-link
+     *ngFor="let link of links"
+     [routerLink]="link.url"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    {{link.label}}
+  </a>
+</nav>
+<router-outlet></router-outlet>
+<br><br>
+<h3>tabs</h3>
 <mat-tab-group>
 
   <mat-tab>
