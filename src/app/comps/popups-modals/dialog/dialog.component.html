@@ -17,3 +17,26 @@
   street: {{add.street}}<br>
   city: {{add.city}}
 </div>
+
+
+<ng-template #addrTemplate>
+  <h4 mat-dialog-title>enter address (template)</h4><br>
+
+  <div mat-dialog-content>
+
+    <div *ngIf="data.name">welcome {{data.name}}</div><br>
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="addr.street" placeholder="street" tabindex="1">
+    </mat-form-field><br>
+    <mat-form-field><br>
+      <input matInput [(ngModel)]="addr.city" placeholder="city" tabindex="2">
+    </mat-form-field><br>
+
+  </div>
+
+  <div mat-dialog-actions="">
+    <button mat-button mat-dialog-close tabindex="-1">cancel</button>
+    <button mat-button [mat-dialog-close]="addr" tabindex="3">ok</button>
+  </div>
+</ng-template>

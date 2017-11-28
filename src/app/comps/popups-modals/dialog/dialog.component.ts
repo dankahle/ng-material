@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {MatDialog, MatDialogConfig} from "@angular/material";
+import {Component, OnInit, TemplateRef, ViewChild} from '@angular/core';
+import {MatDialog, MatDialogConfig} from '@angular/material';
 import {DialogChildComponent} from "./dialog-child/dialog-child.component";
 
 export interface Addr {
@@ -27,6 +27,7 @@ export class DialogComponent {
     height: '400px',
     data: {}
   }
+  @ViewChild('addrTemplate') addrTemplate: TemplateRef<any>;
 
   constructor(private mdDialog: MatDialog) {
   }
@@ -34,6 +35,8 @@ export class DialogComponent {
   addAddr() {
     this.config.data.name = this.obj.name;
     this.mdDialog.open(DialogChildComponent, this.config)
+      // template option doesn't work currently as mat doesn't return a MatDialogRef for templates
+    // this.mdDialog.open(this.addrTemplate, this.config)
       .afterClosed().subscribe(result => {
         if (result) {
           this.obj.addrs.push(result);
