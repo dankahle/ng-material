@@ -1,18 +1,16 @@
 
 
 
-<!--
-this placeholder float thing is broken for now. Don't think they have it implemented, used to be auto/??/?? or so, now a boolean that's readonly??
 
 <section>
   placholder position:<br>
-  <mat-checkbox [(ngModel)]="shouldPlaceholderFloat"></mat-checkbox>
+  <mat-radio-group [(ngModel)]="floatPlaceholder">
+    <mat-radio-button [value]="val" *ngFor="let val of ['auto', 'never', 'always']">{{val}}</mat-radio-button>
+  </mat-radio-group>
 </section>
--->
 
 <section>
-<mat-form-field>
-  <!--<mat-select placeholder="Favorite food" [(ngModel)]="selection" [shouldPlaceholderFloat]="shouldPlaceholderFloat">-->
+<mat-form-field [floatPlaceholder]="floatPlaceholder">
     <mat-select placeholder="Favorite food" [(ngModel)]="selection">
   <mat-option *ngFor="let food of foods" [value]="food.value" [disabled]="food.disabled">
     {{ food.viewValue }}
@@ -21,5 +19,6 @@ this placeholder float thing is broken for now. Don't think they have it impleme
 </mat-form-field></section>
 
 <section>
-  selection: {{selection}}
+  selection: {{selection}}<br>
+  placeholder: {{floatPlaceholder}}
 </section>

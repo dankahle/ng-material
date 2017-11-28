@@ -11,7 +11,7 @@ export class SelectComponent implements OnInit {
     {value: 'pizza-1', viewValue: 'Pizza', disabled:true},
     {value: 'tacos-2', viewValue: 'Tacos'}
   ];
-  shouldPlaceholderFloat = 'false';
+  floatPlaceholder = 'auto';
 
 
   constructor() { }

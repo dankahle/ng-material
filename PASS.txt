@@ -1,17 +1,6 @@
 
 
 
-
-popups and modal:
-snackbar
-
-datatable:
-table
-sort header
-paginator
-
-
-*** update material and angular and fix <md-form-field> >> <md-form-field>
-
+add layout: expansionPanel, and stepper
 
 

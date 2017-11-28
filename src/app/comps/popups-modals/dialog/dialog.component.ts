@@ -22,7 +22,7 @@ export class DialogComponent {
   obj:Info = <Info>{
     addrs: <Addr>[]
   };
-  config: MatDialogConfig = {
+  config: MatDialogConfig = <MatDialogConfig>{
     width: '400px',
     height: '400px',
     data: {}
